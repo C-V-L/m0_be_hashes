@@ -12,6 +12,10 @@ states = {
 #
 #
 
+states.each do |state, abbreviation|
+  p "#{abbreviation} is the abbreviation for #{state}."
+end
+
 
 # ======================================
 # 2- Using the following Hash
@@ -27,7 +31,9 @@ birthdays = {
 #
 #
 #
-
+birthdays.each do |friend, dob|
+  p "#{friend}'s birthday is #{dob}! I cannot wait!"
+end
 
 # ======================================
 # 3- Using the following Hash
@@ -43,3 +49,9 @@ login_statuses = {
 #
 #
 #
+
+login_statuses.each do |user, status|
+  if status == true
+    p "#{user} is online!"
+  end
+end
